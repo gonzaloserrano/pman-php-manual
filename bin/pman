@@ -3,6 +3,7 @@
 # from http://stackoverflow.com/a/697552/547956
 # get the absolute path of the executable
 SELF_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P) && SELF_PATH=$SELF_PATH/$(basename -- "$0")
+DIR=$(dirname -- "$SELF_PATH")
 
 # resolve symlinks
 while [ -h $SELF_PATH ]; do
